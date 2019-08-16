@@ -1,0 +1,53 @@
+
+{% load staticfiles %}
+{% block center %}
+<header class="header white-bg" >
+              <!--logo start-->
+              <a href="#" class="logo">三创<span>题库</span></a>
+              <!--logo end-->
+              <div class="top-nav">
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <ul class="nav navbar-nav">
+                    <li class="active">
+                      <a class="" href="http://127.0.0.1:8000/">
+                          <span> 首页 </span>
+                      </a>
+                    </li>
+                    <li class="">
+                        <a class="" href="http://127.0.0.1:8000/questions/">
+                      <span> 校招题 </span>
+                    </a>
+                    </li>
+                  </ul>
+                  <ul class="nav pull-right top-menu">
+                      <li>
+                          <form action="/question/">
+                             <input type="text" class="form-control search" placeholder="Search" name="search" id="search">
+                          </form>
+                      </li>
+                      <!-- user login dropdown start-->
+
+                      <li class="dropdown">
+                          <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                              <img alt="" src="{% static '/img/1534323246.png' %}" height="30px">
+
+                              <span class="username">admin</span>
+                              <b class="caret"></b>
+                          </a>
+                          <ul class="dropdown-menu">
+                              <div class="log-arrow-up"></div>
+                              <li><a class="" href="http://127.0.0.1:8000/uc/profile/"> 个人资料 </a></li>
+                              <li><a class="" href="http://127.0.0.1:8000/uc/change_passwd/"> 修改密码 </a></li>
+                              <li><a class="" href="http://127.0.0.1:8000/uc/answer/"> 我的回答 </a></li>
+                              <li><a class="" href="http://127.0.0.1:8000/uc/collect/"> 我的收藏 </a></li>
+                              <li><a class="" href="#myModal-1" data-toggle="modal"> 贡献题目 </a></li>
+                              <li><a class="" href="http://127.0.0.1:8000/uc/contribut/"> 我的贡献 </a></li>
+                              <li><a class="" href="http://127.0.0.1:8000/accounts/logout/"> 退出 </a></li>
+                          </ul>
+                      </li>
+
+                      <!-- user login dropdown end -->
+                  </ul>
+              </div>
+          </header>
+{% endblock center %}

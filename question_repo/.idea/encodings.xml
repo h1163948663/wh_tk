@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/apps/repo/apps.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/repo/context_processors.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/repo/models.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/repo/signal/handler.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/repo/validator.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apps/usercenter/models.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libs/repo_data.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/logs/apis.log" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/question_repo/context_processors.py" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>
