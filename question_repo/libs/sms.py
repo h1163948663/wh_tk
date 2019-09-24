@@ -20,8 +20,8 @@ def send_sms(mobile, captcha):
         "sid": "074ab94b632b2edf9d450a080d72e0d2",
         "token": "6c9206a8d85a3ddb756f0d70603483fa",
         "appid": "f4a124b2dbce4a63bc487f020832716a",
-        "templateid": "489849",
-        "param": f"{str(captcha)},300",
+        "templateid": "493686",
+        "param": f"{str(captcha)}",
         "mobile": mobile,
     }
 

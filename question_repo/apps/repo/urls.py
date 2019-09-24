@@ -8,7 +8,6 @@ urlpatterns=[
     # 贡献题目
     url(r'^question/$', views.Question.as_view(), name="question"),
     # 题目详情，捕获了一个参数
-
     url(r'^question/(?P<id>\d+)/$', views.QuestionDetail.as_view(), name="question_detail"),
 
 ]

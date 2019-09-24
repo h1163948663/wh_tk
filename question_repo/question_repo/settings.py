@@ -244,7 +244,7 @@ CACHES = {
         # BACKEND配置缓存后端为RedisCache
         'BACKEND': 'django_redis.cache.RedisCache',
         # LOCATION配置redis服务器地址
-        'LOCATION': 'redis://192.168.0.41:6379',
+        'LOCATION': 'redis://192.168.0.22:6379',
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
              "PASSWORD": "",
@@ -255,8 +255,9 @@ CACHES = {
 #自定义用户model——"应用名.model名"
 AUTH_USER_MODEL = 'accounts.User'
 
-FontPath = os.path.join(BASE_DIR,'static/fonts/')
 
+FontPath = os.path.join(BASE_DIR,'static/fonts/')
+#配置图片
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 if not os.path.exists(MEDIA_ROOT):
     os.mkdir(MEDIA_ROOT)
@@ -302,3 +303,23 @@ EMAIL_HOST_PASSWORD = 'ilznjkmhvfxvijab'
 EMAIL_USE_TLS = True
 # 发件人的邮箱
 EMAIL_FROM = '1163948663@qq.com'
+
+
+
+import os
+env = os.environ.get('ENV', None)
+if env == 'prod':
+    # from  settings_prod import *
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db_prod.sqlite3'),
+        }
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }

@@ -17,5 +17,5 @@ url(r'^password/forget/$', views.test, name="password_forget"),
 url(r'^password/reset/token/$',views.test, name="password_reset"),
 url(r'^index/$',views.test,name="index"),
 #重置密码
-    url(r'password/reset/(\w+)/$', views.PasswordReset.as_view(), name="password_reset"),
+url(r'password/reset/(\w+)/$', views.PasswordReset.as_view(), name="password_reset"),
 ]

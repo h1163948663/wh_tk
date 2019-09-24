@@ -10,5 +10,5 @@ class MD1(MiddlewareMixin):
 
 class MD2(MiddlewareMixin):
     def process_request(self, request):
-        coretime = time.time()-
+        coretime = time.time()
         print("MD2ÀïÃæµÄ process_request")
